@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Geocoding</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=REDACTED&libraries=places&callback=initializeServices" async defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input, select { width: 300px; padding: 10px; margin: 5px 0; }
+        button { padding: 10px; margin-left: 10px; }
+        #suggestions { margin-top: 10px; border: 1px solid #ccc; max-height: 150px; overflow-y: auto; }
+        .suggestion { cursor: pointer; padding: 5px; border: 1px solid #ccc; }
+        .suggestion:hover { background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <select id="area_type">
+        <option value="alquiler-habitacion">Compartir HabitaciÃ³n</option>
+        <option value="alquiler-viviendas">Alquiler</option>
+        <option value="venta-viviendas">Comprar</option>
+    </select>
+    <input type="date" id="dep_date" />
+    <select id="dep_time"></select>
+    <input type="number" id="trav_time" placeholder="Travel time (minutes)" />
+    <select id="trans_method">
+        <option value="cycling">Cycling</option>
+        <option value="driving">Driving</option>
+        <option value="public_transport">Public Transport</option>
+        <option value="walking">Walking</option>
+        <option value="coach">Coach</option>
+        <option value="bus">Bus</option>
+        <option value="train">Train</option>
+    </select>
+    <input type="text" id="address" placeholder="Enter address" />
+    <div id="suggestions"></div>
+    <button id="get-coordinates" disabled>Get Coordinates</button>
+    <div id="result"></div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
+
+
+

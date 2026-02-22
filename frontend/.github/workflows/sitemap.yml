@@ -1,0 +1,42 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.19.0'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Ensure blog data directory exists
+        run: |
+          mkdir -p dist/src/features/blog/data
+          cp -r src/features/blog/data dist/src/features/blog/
+
+      - name: Generate Sitemap
+        run: node config/sitemap/generateSitemap.js
+        env:
+          NODE_ENV: production
+
+      - name: Commit and push sitemap.xml
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -f public/sitemap.xml
+          git commit -m "Update sitemap.xml" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
