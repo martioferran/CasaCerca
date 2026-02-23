@@ -18,7 +18,7 @@ CORS(app)  # Enable CORS for all routes
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html', google_api_key=os.environ.get('GOOGLE_API_KEY', ''))
 
 def process_coordinates(latitude, longitude, dep_time, trav_time, trans_method, area_type):
     api_url = "https://api.traveltimeapp.com/v4/time-map"

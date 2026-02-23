@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Geocoding</title>
-    <script src="https://maps.googleapis.com/maps/api/js?key=REDACTED&libraries=places&callback=initializeServices" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ google_api_key }}&libraries=places&callback=initializeServices" async defer></script>
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; }
         input, select { width: 300px; padding: 10px; margin: 5px 0; }
@@ -16,7 +16,7 @@
 </head>
 <body>
     <select id="area_type">
-        <option value="alquiler-habitacion">Compartir HabitaciÃ³n</option>
+        <option value="alquiler-habitacion">Compartir Habitación</option>
         <option value="alquiler-viviendas">Alquiler</option>
         <option value="venta-viviendas">Comprar</option>
     </select>

@@ -1,5 +1,3 @@
-﻿//const googleApiKey = 'REDACTED';
-const googleApiKey = '{{ GOOGLE_API_KEY }}';
 let autocompleteService;
 let geocoder;
 let selectedAddress = '';

@@ -56,6 +56,7 @@ Frontend runs at `http://localhost:5173` and expects the backend at `http://loca
 **Backend (`backend/.env`)**
 - `TRAVELTIME_APP_ID`
 - `TRAVELTIME_API_KEY`
+- `GOOGLE_API_KEY` (for the backend-rendered `index.html`)
 
 **Frontend (`frontend/.env`)**
 - `VITE_API_URL` (backend URL, e.g. `http://localhost:3001`)
