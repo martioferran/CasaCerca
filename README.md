@@ -12,12 +12,12 @@ CasaCerca lets users input:
 The system calculates a **travel-time isochrone** (reachable area within the time limit), then builds Idealista search URLs so users can view listings inside that area.
 
 ## Screenshots
-<img src="docs/screenshots/casacerca_pic1.png" width="800" alt="CasaCerca screenshot 1" />
-<img src="docs/screenshots/casacerca_pic2.png" width="800" alt="CasaCerca screenshot 2" />
-<img src="docs/screenshots/casacerca_pic3.png" width="800" alt="CasaCerca screenshot 3" />
-<img src="docs/screenshots/casacerca_pic4.png" width="800" alt="CasaCerca screenshot 4" />
-<img src="docs/screenshots/casacerca_pic6.png" width="800" alt="CasaCerca screenshot 5" />
-<img src="docs/screenshots/casacerca_pic7.png" width="800" alt="CasaCerca screenshot 6" />
+<img src="docs/screenshots/casacerca_pic1_new.png" width="800" alt="CasaCerca screenshot 1" />
+<img src="docs/screenshots/casacerca_pic1.2_new.png" width="800" alt="CasaCerca screenshot 2" />
+<img src="docs/screenshots/casacaerca_pic2_new.png" width="800" alt="CasaCerca screenshot 3" />
+<img src="docs/screenshots/casacerca_pic2.1_new.png" width="800" alt="CasaCerca screenshot 4" />
+<img src="docs/screenshots/casacerca_pic3_new.png" width="800" alt="CasaCerca screenshot 5" />
+<img src="docs/screenshots/casacerca_3.1_new.png" width="800" alt="CasaCerca screenshot 6" />
 
 ## How It Works
 **Frontend (React + Vite + Mapbox + Google Places)**
